@@ -1,0 +1,25 @@
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Generated analysis artifacts are excluded by default.
+# README-referenced presentation figures are force-added explicitly.
+outputs/
+
+# Large or regenerable model artifacts
+*.pt
+*.pth
+*.joblib
+
+# Local review files
+*.xlsx
+~$*
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
