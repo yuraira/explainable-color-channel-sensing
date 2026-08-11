@@ -1,4 +1,4 @@
-"""Measure Extra Trees performance and deployment cost after feature reduction."""
+"""Measure tree-ensemble performance and deployment cost after feature reduction."""
 
 from __future__ import annotations
 
@@ -49,26 +49,30 @@ CONCEPTUAL_CHANNELS = {
 INFERENCE_REPEATS = 50
 
 
-def load_parameters() -> pd.DataFrame:
+def load_parameters(model_name: str) -> pd.DataFrame:
     primary = pd.read_csv("outputs/modeling/ml/ml_best_parameters.csv")
     primary = primary.loc[
-        (primary["model"] == "ExtraTrees")
+        (primary["model"] == model_name)
         & primary["feature_set"].isin(["RGB_primary", "HSV_primary"])
     ]
     reduced = pd.read_csv(
         "outputs/modeling/reduced_features/reduced_feature_best_parameters.csv"
     )
     reduced = reduced.loc[
-        (reduced["model"] == "ExtraTrees")
+        (reduced["model"] == model_name)
         & reduced["feature_set"].isin(["G_only", "Hue_only"])
     ]
     return pd.concat([primary, reduced], ignore_index=True)
 
 
-def measure_fold_efficiency() -> pd.DataFrame:
+def measure_fold_efficiency(model_name: str) -> pd.DataFrame:
     features = pd.read_csv("outputs/color_features/features.csv")
     splits = pd.read_csv("outputs/data_splits/nested_split_assignments.csv")
-    parameters = load_parameters()
+    parameters = load_parameters(model_name)
+    primary_predictions = pd.read_csv("outputs/modeling/ml/ml_predictions.csv")
+    reduced_predictions = pd.read_csv(
+        "outputs/modeling/reduced_features/reduced_feature_predictions.csv"
+    )
     rows: list[dict[str, object]] = []
     for analyte in ANALYTES:
         for feature_set in FEATURE_ORDER:
@@ -85,7 +89,7 @@ def measure_fold_efficiency() -> pd.DataFrame:
                         f"fold {outer_fold}; found {len(parameter_row)}"
                     )
                 best_parameters = json.loads(parameter_row.iloc[0]["best_parameters"])
-                estimator = build_estimator("ExtraTrees", best_parameters)
+                estimator = build_estimator(model_name, best_parameters)
                 fold_split = splits.loc[
                     (splits["analyte"] == analyte)
                     & (splits["outer_fold"] == outer_fold)
@@ -114,6 +118,33 @@ def measure_fold_efficiency() -> pd.DataFrame:
                     predict_start = time.perf_counter()
                     estimator.predict(test_data[selected_features])
                     timings.append(time.perf_counter() - predict_start)
+                prediction_raw = estimator.predict(test_data[selected_features])
+                prediction_source = (
+                    reduced_predictions
+                    if feature_set in {"G_only", "Hue_only"}
+                    else primary_predictions
+                )
+                expected = (
+                    prediction_source.loc[
+                        (prediction_source["analyte"] == analyte)
+                        & (prediction_source["outer_fold"] == outer_fold)
+                        & (prediction_source["feature_set"] == feature_set)
+                        & (prediction_source["model"] == model_name),
+                        ["patch_id", "prediction_raw"],
+                    ]
+                    .set_index("patch_id")
+                    .loc[test_data["patch_id"], "prediction_raw"]
+                    .to_numpy(dtype=float)
+                )
+                maximum_prediction_difference = float(
+                    np.max(np.abs(prediction_raw - expected))
+                )
+                if maximum_prediction_difference > 1e-10:
+                    raise RuntimeError(
+                        f"Prediction mismatch for {model_name}, {analyte}, "
+                        f"{feature_set}, fold {outer_fold}: "
+                        f"{maximum_prediction_difference}"
+                    )
                 fitted_model = estimator.regressor_.named_steps["model"]
                 node_counts = np.asarray(
                     [tree.tree_.node_count for tree in fitted_model.estimators_],
@@ -143,16 +174,19 @@ def measure_fold_efficiency() -> pd.DataFrame:
                         "inference_ms_per_patch": float(
                             1000 * np.median(timings) / len(test_data)
                         ),
+                        "prediction_max_abs_difference": (
+                            maximum_prediction_difference
+                        ),
                     }
                 )
     return pd.DataFrame(rows)
 
 
-def summarize(folds: pd.DataFrame) -> pd.DataFrame:
+def summarize(folds: pd.DataFrame, model_name: str) -> pd.DataFrame:
     performance = pd.read_csv(
         "outputs/modeling/reduced_features/algorithm_feature_summary.csv"
     )
-    performance = performance.loc[performance["model"] == "ExtraTrees"]
+    performance = performance.loc[performance["model"] == model_name]
     efficiency = (
         folds.groupby(["analyte", "feature_set"], as_index=False)
         .agg(
@@ -235,7 +269,11 @@ def summarize(folds: pd.DataFrame) -> pd.DataFrame:
     return summary.sort_values(["analyte", "feature_set"]).reset_index(drop=True)
 
 
-def plot_summary(summary: pd.DataFrame, output_path: Path) -> None:
+def plot_summary(
+    summary: pd.DataFrame,
+    output_path: Path,
+    model_label: str,
+) -> None:
     fig, axes = plt.subplots(2, 2, figsize=(12.5, 9), constrained_layout=True)
     colors = ["#62A76B", "#3B7FB6", "#D38B43", "#8B63A8"]
     for column, analyte in enumerate(ANALYTES):
@@ -266,7 +304,7 @@ def plot_summary(summary: pd.DataFrame, output_path: Path) -> None:
         size_axis.set_xticks(x, [FEATURE_LABELS[item] for item in FEATURE_ORDER])
         size_axis.grid(axis="y", alpha=0.25)
     fig.suptitle(
-        "Extra Trees: feature reduction trades input size for prediction accuracy",
+        f"{model_label}: feature reduction trades input size for prediction accuracy",
         fontsize=16,
         fontweight="bold",
     )
@@ -274,21 +312,23 @@ def plot_summary(summary: pd.DataFrame, output_path: Path) -> None:
     plt.close(fig)
 
 
-def main() -> None:
+def run_analysis(model_name: str, file_prefix: str, model_label: str) -> None:
     output_dir = Path("outputs/modeling/feature_efficiency")
     figures_dir = output_dir / "figures"
     figures_dir.mkdir(parents=True, exist_ok=True)
-    folds = measure_fold_efficiency()
-    summary = summarize(folds)
-    folds.to_csv(output_dir / "extra_trees_efficiency_folds.csv", index=False)
-    summary.to_csv(output_dir / "extra_trees_efficiency_summary.csv", index=False)
+    folds = measure_fold_efficiency(model_name)
+    summary = summarize(folds, model_name)
+    folds.to_csv(output_dir / f"{file_prefix}_efficiency_folds.csv", index=False)
+    summary.to_csv(output_dir / f"{file_prefix}_efficiency_summary.csv", index=False)
     plot_summary(
         summary,
-        figures_dir / "extra_trees_feature_reduction_efficiency.png",
+        figures_dir / f"{file_prefix}_feature_reduction_efficiency.png",
+        model_label,
     )
-    (output_dir / "run_config.json").write_text(
+    (output_dir / f"{file_prefix}_run_config.json").write_text(
         json.dumps(
             {
+                "model": model_name,
                 "random_seed": RANDOM_SEED,
                 "tree_count": 150,
                 "outer_folds": 5,
@@ -301,6 +341,10 @@ def main() -> None:
         ),
         encoding="utf-8",
     )
+
+
+def main() -> None:
+    run_analysis("ExtraTrees", "extra_trees", "Extra Trees")
 
 
 if __name__ == "__main__":

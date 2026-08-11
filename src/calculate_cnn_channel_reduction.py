@@ -15,11 +15,7 @@ IMAGE_SIZE = 96
 
 
 def build_model(input_channels: int) -> TinyColorCNN:
-    model = TinyColorCNN()
-    model.features[0] = nn.Conv2d(
-        input_channels, 24, kernel_size=3, padding=1
-    )
-    return model.eval()
+    return TinyColorCNN(input_channels=input_channels).eval()
 
 
 def count_macs(model: nn.Module, input_channels: int) -> int:

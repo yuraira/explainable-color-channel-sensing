@@ -167,10 +167,10 @@ class PatchDataset(Dataset):
 
 
 class TinyColorCNN(nn.Module):
-    def __init__(self, dropout: float = 0.25) -> None:
+    def __init__(self, dropout: float = 0.25, input_channels: int = 3) -> None:
         super().__init__()
         self.features = nn.Sequential(
-            nn.Conv2d(3, 24, kernel_size=3, padding=1),
+            nn.Conv2d(input_channels, 24, kernel_size=3, padding=1),
             nn.BatchNorm2d(24),
             nn.ReLU(inplace=True),
             nn.Conv2d(24, 24, kernel_size=3, padding=1),
