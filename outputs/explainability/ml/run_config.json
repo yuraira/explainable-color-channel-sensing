@@ -1,0 +1,17 @@
+{
+  "random_seed": 240920,
+  "outer_folds": 5,
+  "trees": 150,
+  "permutation_repeats": 30,
+  "target_transform": "raw for SHAP values in concentration units",
+  "feature_spaces": [
+    "RGB_primary",
+    "HSV_primary"
+  ],
+  "model_by_analyte": {
+    "glucose": "ExtraTrees",
+    "ketone": "RandomForest"
+  },
+  "hue_grouping": "h_sin_weighted and h_cos_weighted summed as one additive group",
+  "evaluation_data": "held-out outer test patches only"
+}

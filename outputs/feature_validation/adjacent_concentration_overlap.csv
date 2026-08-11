@@ -1,0 +1,103 @@
+﻿analyte,feature,feature_label,concentration_1_mg_ml,concentration_2_mg_ml,median_1,median_2,absolute_median_gap,median_gap_over_mean_iqr,iqr_overlap_over_union,interpretation_scope
+glucose,r_median,R median,0,0.01,97,87,10,0.81632653,0.1011236,technical-patch distribution overlap
+glucose,r_median,R median,0.01,0.05,87,101,14,1.4736842,0,technical-patch distribution overlap
+glucose,r_median,R median,0.05,0.1,101,90,11,0.75213675,0.44444444,technical-patch distribution overlap
+glucose,r_median,R median,0.1,0.5,90,105,15,0.72727273,0.375,technical-patch distribution overlap
+glucose,r_median,R median,0.5,1,105,96,9,0.52554745,0.41237113,technical-patch distribution overlap
+glucose,r_median,R median,1,2.5,96,110.5,14.5,0.89922481,0.14159292,technical-patch distribution overlap
+glucose,r_median,R median,2.5,5,110.5,98.5,12,0.68571429,0.16666667,technical-patch distribution overlap
+glucose,r_median,R median,5,10,98.5,121,22.5,1.6666667,0,technical-patch distribution overlap
+glucose,r_median,R median,10,15,121,119.5,1.5,0.13043478,0.91666667,technical-patch distribution overlap
+glucose,r_median,R median,15,20,119.5,124.5,5,0.41237113,0.4057971,technical-patch distribution overlap
+glucose,g_median,G median,0,0.01,111.5,101.5,10,0.84210526,0,technical-patch distribution overlap
+glucose,g_median,G median,0.01,0.05,101.5,116,14.5,1.4871795,0,technical-patch distribution overlap
+glucose,g_median,G median,0.05,0.1,116,106,10,0.63492063,0.48235294,technical-patch distribution overlap
+glucose,g_median,G median,0.1,0.5,106,122,16,0.75294118,0.328125,technical-patch distribution overlap
+glucose,g_median,G median,0.5,1,122,113,9,0.5106383,0.41,technical-patch distribution overlap
+glucose,g_median,G median,1,2.5,113,130.5,17.5,1.0526316,0.0390625,technical-patch distribution overlap
+glucose,g_median,G median,2.5,5,130.5,122.5,8,0.44137931,0.39423077,technical-patch distribution overlap
+glucose,g_median,G median,5,10,122.5,148,25.5,1.8053097,0,technical-patch distribution overlap
+glucose,g_median,G median,10,15,148,146,2,0.16494845,0.86538462,technical-patch distribution overlap
+glucose,g_median,G median,15,20,146,152,6,0.49484536,0.19753086,technical-patch distribution overlap
+glucose,b_median,B median,0,0.01,133,124,9,0.68571429,0.17977528,technical-patch distribution overlap
+glucose,b_median,B median,0.01,0.05,124,140,16,1.5238095,0,technical-patch distribution overlap
+glucose,b_median,B median,0.05,0.1,140,129,11,0.64233577,0.47311828,technical-patch distribution overlap
+glucose,b_median,B median,0.1,0.5,129,142,13,0.57458564,0.54700855,technical-patch distribution overlap
+glucose,b_median,B median,0.5,1,142,133,9,0.5,0.44,technical-patch distribution overlap
+glucose,b_median,B median,1,2.5,133,141.5,8.5,0.5483871,0.40909091,technical-patch distribution overlap
+glucose,b_median,B median,2.5,5,141.5,124.5,17,1.0225564,0,technical-patch distribution overlap
+glucose,b_median,B median,5,10,124.5,133,8.5,0.62385321,0.28235294,technical-patch distribution overlap
+glucose,b_median,B median,10,15,133,134,1,0.090909091,0.57142857,technical-patch distribution overlap
+glucose,b_median,B median,15,20,134,141.5,7.5,0.71428571,0.10526316,technical-patch distribution overlap
+glucose,s_median,S median,0,0.01,0.27451,0.294118,0.019608,0.75472715,0.17777526,technical-patch distribution overlap
+glucose,s_median,S median,0.01,0.05,0.294118,0.278431,0.015687,1.3334183,0,technical-patch distribution overlap
+glucose,s_median,S median,0.05,0.1,0.278431,0.301961,0.02353,1.2000204,0.1111237,technical-patch distribution overlap
+glucose,s_median,S median,0.1,0.5,0.301961,0.258824,0.043137,1.5438465,0,technical-patch distribution overlap
+glucose,s_median,S median,0.5,1,0.258824,0.278431,0.019607,0.81630359,0.088876296,technical-patch distribution overlap
+glucose,s_median,S median,1,2.5,0.278431,0.219608,0.058823,2.3076893,0,technical-patch distribution overlap
+glucose,s_median,S median,2.5,5,0.219608,0.219608,0,0,0.78571819,technical-patch distribution overlap
+glucose,s_median,S median,5,10,0.219608,0.184314,0.035294,1.7142684,0,technical-patch distribution overlap
+glucose,s_median,S median,10,15,0.184314,0.184314,0,0,0.8499847,technical-patch distribution overlap
+glucose,s_median,S median,15,20,0.184314,0.188235,0.003921,0.17775259,0.60713635,technical-patch distribution overlap
+glucose,v_median,V median,0,0.01,0.5215685,0.486275,0.0352935,0.6857018,0.17977142,technical-patch distribution overlap
+glucose,v_median,V median,0.01,0.05,0.486275,0.54902,0.062745,1.5238061,0,technical-patch distribution overlap
+glucose,v_median,V median,0.05,0.1,0.54902,0.505882,0.043138,0.64234794,0.47311533,technical-patch distribution overlap
+glucose,v_median,V median,0.1,0.5,0.505882,0.556863,0.050981,0.57459404,0.54700952,technical-patch distribution overlap
+glucose,v_median,V median,0.5,1,0.556863,0.521569,0.035294,0.5,0.43999837,technical-patch distribution overlap
+glucose,v_median,V median,1,2.5,0.521569,0.554902,0.033333,0.54837993,0.40908722,technical-patch distribution overlap
+glucose,v_median,V median,2.5,5,0.554902,0.490196,0.064706,0.96349985,0.030078417,technical-patch distribution overlap
+glucose,v_median,V median,5,10,0.490196,0.580392,0.090196,1.6140294,0,technical-patch distribution overlap
+glucose,v_median,V median,10,15,0.580392,0.572549,0.007843,0.1649465,0.86538839,technical-patch distribution overlap
+glucose,v_median,V median,15,20,0.572549,0.596078,0.023529,0.49483951,0.19752807,technical-patch distribution overlap
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),0,0.01,213.44455,217.4112,3.966653,2.2498563,0,technical-patch distribution overlap
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),0.01,0.05,217.4112,217.24441,0.1667911,0.11760444,0.63556939,technical-patch distribution overlap
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),0.05,0.1,217.24441,215.29095,1.9534549,1.6875429,0,technical-patch distribution overlap
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),0.1,0.5,215.29095,212.29924,2.9917107,2.2899627,0,technical-patch distribution overlap
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),0.5,1,212.29924,212.60405,0.3048015,0.18531109,0.62567569,technical-patch distribution overlap
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),1,2.5,212.60405,201.76044,10.84361,5.5026249,0,technical-patch distribution overlap
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),2.5,5,201.76044,184.62729,17.133149,4.4305818,0,technical-patch distribution overlap
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),5,10,184.62729,145.30673,39.320556,7.9729822,0,technical-patch distribution overlap
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),10,15,145.30673,152.5643,7.2575709,2.1988974,0,technical-patch distribution overlap
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),15,20,152.5643,156.02166,3.4573633,0.95648581,0.010855822,technical-patch distribution overlap
+ketone,r_median,R median,0,0.01,191,185,6,0.97959184,0.11363636,technical-patch distribution overlap
+ketone,r_median,R median,0.01,0.05,185,179,6,0.59259259,0.19117647,technical-patch distribution overlap
+ketone,r_median,R median,0.05,0.1,179,181,2,0.12698413,0.75,technical-patch distribution overlap
+ketone,r_median,R median,0.1,0.5,181,178,3,0.21052632,0.56164384,technical-patch distribution overlap
+ketone,r_median,R median,0.5,1,178,166.5,11.5,0.75409836,0.25773196,technical-patch distribution overlap
+ketone,r_median,R median,1,5,166.5,165,1.5,0.10909091,0.50684932,technical-patch distribution overlap
+ketone,r_median,R median,5,10,165,144.5,20.5,1.8222222,0,technical-patch distribution overlap
+ketone,g_median,G median,0,0.01,137,128.5,8.5,1.1929825,0,technical-patch distribution overlap
+ketone,g_median,G median,0.01,0.05,128.5,124.5,4,0.3047619,0.36363636,technical-patch distribution overlap
+ketone,g_median,G median,0.05,0.1,124.5,127,2.5,0.14285714,0.62790698,technical-patch distribution overlap
+ketone,g_median,G median,0.1,0.5,127,122,5,0.37037037,0.36708861,technical-patch distribution overlap
+ketone,g_median,G median,0.5,1,122,87,35,2.24,0,technical-patch distribution overlap
+ketone,g_median,G median,1,5,87,79,8,0.51612903,0.19230769,technical-patch distribution overlap
+ketone,g_median,G median,5,10,79,54.5,24.5,2.2272727,0,technical-patch distribution overlap
+ketone,b_median,B median,0,0.01,95.5,91,4.5,0.46753247,0.35087719,technical-patch distribution overlap
+ketone,b_median,B median,0.01,0.05,91,92,1,0.088888889,0.55172414,technical-patch distribution overlap
+ketone,b_median,B median,0.05,0.1,92,97,5,0.41237113,0.42647059,technical-patch distribution overlap
+ketone,b_median,B median,0.1,0.5,97,117,20,1.7777778,0,technical-patch distribution overlap
+ketone,b_median,B median,0.5,1,117,122,5,0.35087719,0.35714286,technical-patch distribution overlap
+ketone,b_median,B median,1,5,122,137,15,1.0619469,0,technical-patch distribution overlap
+ketone,b_median,B median,5,10,137,132,5,0.41237113,0.42647059,technical-patch distribution overlap
+ketone,s_median,S median,0,0.01,0.501961,0.5117645,0.0098035,0.19801,0.65573935,technical-patch distribution overlap
+ketone,s_median,S median,0.01,0.05,0.5117645,0.47451,0.0372545,0.82607876,0.095236361,technical-patch distribution overlap
+ketone,s_median,S median,0.05,0.1,0.47451,0.447059,0.027451,0.60215242,0.20778842,technical-patch distribution overlap
+ketone,s_median,S median,0.1,0.5,0.447059,0.345098,0.101961,2.567891,0,technical-patch distribution overlap
+ketone,s_median,S median,0.5,1,0.345098,0.4764705,0.1313725,2.8817184,0,technical-patch distribution overlap
+ketone,s_median,S median,1,5,0.4764705,0.521569,0.0450985,0.78633544,0.073393379,technical-patch distribution overlap
+ketone,s_median,S median,5,10,0.521569,0.619608,0.098039,2.3255756,0,technical-patch distribution overlap
+ketone,v_median,V median,0,0.01,0.74902,0.72549,0.02353,0.97961563,0.11364374,technical-patch distribution overlap
+ketone,v_median,V median,0.01,0.05,0.72549,0.701961,0.023529,0.5925786,0.19117779,technical-patch distribution overlap
+ketone,v_median,V median,0.05,0.1,0.701961,0.709804,0.007843,0.12698181,0.75000708,technical-patch distribution overlap
+ketone,v_median,V median,0.1,0.5,0.709804,0.698039,0.011765,0.21053197,0.56164919,technical-patch distribution overlap
+ketone,v_median,V median,0.5,1,0.698039,0.652941,0.045098,0.75409356,0.25773608,technical-patch distribution overlap
+ketone,v_median,V median,1,5,0.652941,0.647059,0.005882,0.10908374,0.50684477,technical-patch distribution overlap
+ketone,v_median,V median,5,10,0.647059,0.5666665,0.0803925,1.8222206,0,technical-patch distribution overlap
+ketone,hue_unwrapped_deg,Hue (unwrapped degree),0,0.01,25.937708,23.760094,2.1776135,0.7889041,0.10850871,technical-patch distribution overlap
+ketone,hue_unwrapped_deg,Hue (unwrapped degree),0.01,0.05,23.760094,20.795574,2.9645207,0.74733508,0.085032011,technical-patch distribution overlap
+ketone,hue_unwrapped_deg,Hue (unwrapped degree),0.05,0.1,20.795574,18.231013,2.5645601,0.47991906,0.3181048,technical-patch distribution overlap
+ketone,hue_unwrapped_deg,Hue (unwrapped degree),0.1,0.5,18.231013,4.1613285,14.069685,2.7825625,0,technical-patch distribution overlap
+ketone,hue_unwrapped_deg,Hue (unwrapped degree),0.5,1,4.1613285,-27.652222,31.813551,9.0976066,0,technical-patch distribution overlap
+ketone,hue_unwrapped_deg,Hue (unwrapped degree),1,5,-27.652222,-41.814172,14.16195,5.5138328,0,technical-patch distribution overlap
+ketone,hue_unwrapped_deg,Hue (unwrapped degree),5,10,-41.814172,-52.462104,10.647932,4.6698407,0,technical-patch distribution overlap

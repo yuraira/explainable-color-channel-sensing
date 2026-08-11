@@ -1,0 +1,115 @@
+{
+  "reduced_metric_rows": 100,
+  "parameter_rows": 100,
+  "prediction_rows": 18240,
+  "algorithm_summary_rows": 40,
+  "selected_fold_rows": 40,
+  "feature_summary_rows": 8,
+  "feature_families": [
+    "G_only",
+    "HSV_primary",
+    "Hue_only",
+    "RGB_primary"
+  ],
+  "random_forest_results": [
+    {
+      "analyte": "glucose",
+      "feature_set": "G_only",
+      "mae_mean": 2.4709554624409344,
+      "r2_mean": 0.626964977180337
+    },
+    {
+      "analyte": "glucose",
+      "feature_set": "HSV_primary",
+      "mae_mean": 0.3432931770427415,
+      "r2_mean": 0.9802667460525806
+    },
+    {
+      "analyte": "glucose",
+      "feature_set": "Hue_only",
+      "mae_mean": 0.5327391578641573,
+      "r2_mean": 0.962029520020258
+    },
+    {
+      "analyte": "glucose",
+      "feature_set": "RGB_primary",
+      "mae_mean": 0.6308399249128323,
+      "r2_mean": 0.9585603605549242
+    },
+    {
+      "analyte": "ketone",
+      "feature_set": "G_only",
+      "mae_mean": 0.6226133985743555,
+      "r2_mean": 0.8586417484808925
+    },
+    {
+      "analyte": "ketone",
+      "feature_set": "HSV_primary",
+      "mae_mean": 0.0403828552631578,
+      "r2_mean": 0.9912638023724336
+    },
+    {
+      "analyte": "ketone",
+      "feature_set": "Hue_only",
+      "mae_mean": 0.0438323421052631,
+      "r2_mean": 0.9911584681382916
+    },
+    {
+      "analyte": "ketone",
+      "feature_set": "RGB_primary",
+      "mae_mean": 0.1375255843536541,
+      "r2_mean": 0.973119417447618
+    }
+  ],
+  "nested_selected_results": [
+    {
+      "analyte": "glucose",
+      "feature_set": "G_only",
+      "mae_mean": 2.378542023477384,
+      "r2_mean": 0.6593751005137352
+    },
+    {
+      "analyte": "glucose",
+      "feature_set": "HSV_primary",
+      "mae_mean": 0.3572839739786438,
+      "r2_mean": 0.9803460740739492
+    },
+    {
+      "analyte": "glucose",
+      "feature_set": "Hue_only",
+      "mae_mean": 0.5485479618077209,
+      "r2_mean": 0.9598934111210312
+    },
+    {
+      "analyte": "glucose",
+      "feature_set": "RGB_primary",
+      "mae_mean": 0.5289809298126166,
+      "r2_mean": 0.9689489875745916
+    },
+    {
+      "analyte": "ketone",
+      "feature_set": "G_only",
+      "mae_mean": 0.5946346637787789,
+      "r2_mean": 0.8512260054972598
+    },
+    {
+      "analyte": "ketone",
+      "feature_set": "HSV_primary",
+      "mae_mean": 0.0403828552631578,
+      "r2_mean": 0.9912638023724336
+    },
+    {
+      "analyte": "ketone",
+      "feature_set": "Hue_only",
+      "mae_mean": 0.0438323421052631,
+      "r2_mean": 0.9911584681382916
+    },
+    {
+      "analyte": "ketone",
+      "feature_set": "RGB_primary",
+      "mae_mean": 0.0865158127814859,
+      "r2_mean": 0.9893254973583698
+    }
+  ],
+  "errors": []
+}

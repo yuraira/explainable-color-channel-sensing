@@ -1,0 +1,11 @@
+analyte,outer_fold,feature_set,model,target_transform,feature_count,tree_count,total_tree_nodes,fit_seconds,inference_seconds_median,inference_ms_per_patch,model_size_bytes,prediction_max_abs_difference,model_file
+glucose,1,RGB_HSV_combined,ExtraTrees,raw,7,150,86722,0.14850009999645408,0.00857805000123335,0.0389911363692425,1418281,3.552713678800501e-15,outputs/modeling/selected_ml/models/glucose_fold1.joblib
+glucose,2,HSV_primary,ExtraTrees,raw,4,150,101180,0.10928609999245964,0.008226150006521493,0.039359569409193745,1597187,3.552713678800501e-15,outputs/modeling/selected_ml/models/glucose_fold2.joblib
+glucose,3,HSV_primary,ExtraTrees,log1p,4,150,107440,0.11227050000161398,0.00837580000370508,0.04007559810385206,1815107,1.7763568394002505e-15,outputs/modeling/selected_ml/models/glucose_fold3.joblib
+glucose,4,RGB_HSV_combined,ExtraTrees,raw,7,150,92456,0.21802820000448264,0.018372600003203843,0.08790717704882221,1505865,3.552713678800501e-15,outputs/modeling/selected_ml/models/glucose_fold4.joblib
+glucose,5,HSV_primary,ExtraTrees,raw,4,150,101790,0.20421949999581557,0.018840650001948234,0.09014665072702505,1612257,3.552713678800501e-15,outputs/modeling/selected_ml/models/glucose_fold5.joblib
+ketone,1,HSV_primary,RandomForest,raw,4,150,17772,0.2570720999938203,0.016286400001263246,0.10179000000789529,297719,1.7763568394002505e-15,outputs/modeling/selected_ml/models/ketone_fold1.joblib
+ketone,2,RGB_HSV_combined,RandomForest,raw,7,150,17736,0.31984229999943636,0.016639950008539017,0.10947335531933564,300718,9.71445146547012e-17,outputs/modeling/selected_ml/models/ketone_fold2.joblib
+ketone,3,HSV_primary,RandomForest,raw,4,150,19604,0.23307409998960793,0.0170131499908166,0.11192861836063553,322316,9.194034422677078e-17,outputs/modeling/selected_ml/models/ketone_fold3.joblib
+ketone,4,HSV_primary,RandomForest,raw,4,150,18346,0.24079540000820998,0.015043149993289262,0.09896809206111357,306846,9.999054535747565e-17,outputs/modeling/selected_ml/models/ketone_fold4.joblib
+ketone,5,HSV_primary,RandomForest,raw,4,150,18788,0.23396320000756532,0.015500400004384574,0.10197631581831956,311288,9.71445146547012e-17,outputs/modeling/selected_ml/models/ketone_fold5.joblib

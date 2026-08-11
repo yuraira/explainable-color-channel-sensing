@@ -1,0 +1,31 @@
+﻿analyte,feature,feature_label,n_concentrations,spearman_rho_vs_concentration_order,spearman_p_descriptive,endpoint_change_max_minus_zero,monotonic_adjacent_fraction,last_step_fraction_of_total_path,interpretation_scope
+glucose,b_bg_median,Background B,11,0.095891411,0.77912326,5.5,0.6,0.096385542,source-image-level descriptive trend
+glucose,b_chromaticity_median,b chromaticity,11,-0.82727273,0.0016769739,-0.0504615,0.5,0.016168437,source-image-level descriptive trend
+glucose,b_median,B median,11,0.31266433,0.34919922,8.5,0.6,0.074626866,source-image-level descriptive trend
+glucose,g_bg_median,Background G,11,0.15525276,0.6485214,6,0.6,0.12962963,source-image-level descriptive trend
+glucose,g_chromaticity_median,g chromaticity,11,0.9,0.00015997143,0.035589,0.6,0.015115627,source-image-level descriptive trend
+glucose,g_median,G median,11,0.9,0.00015997143,40.5,0.5,0.050632911,source-image-level descriptive trend
+glucose,h_cos_weighted,cos(H),11,-0.66363636,0.025984134,-0.078354,0.7,0.051769907,source-image-level descriptive trend
+glucose,h_sin_weighted,sin(H),11,0.9,0.00015997143,0.9567405,0.6,0.03890296,source-image-level descriptive trend
+glucose,hue_unwrapped_deg,Hue (unwrapped degree),11,-0.9,0.00015997143,-57.422884,0.6,0.039559896,source-image-level descriptive trend
+glucose,intensity_median,Intensity median,11,0.82727273,0.0016769739,26,0.5,0.058383234,source-image-level descriptive trend
+glucose,r_bg_median,Background R,11,0.28701669,0.39213584,6.75,0.6,0.10582011,source-image-level descriptive trend
+glucose,r_chromaticity_median,r chromaticity,11,0.78181818,0.0044731623,0.01409,0.4,0.033937897,source-image-level descriptive trend
+glucose,r_median,R median,11,0.78181818,0.0044731623,27.5,0.5,0.043668122,source-image-level descriptive trend
+glucose,s_median,S median,11,-0.81924127,0.0020323783,-0.086275,0.6,0.017854622,source-image-level descriptive trend
+glucose,v_median,V median,11,0.69090909,0.018565033,0.0745095,0.5,0.052630696,source-image-level descriptive trend
+ketone,b_bg_median,Background B,8,0.27712855,0.50637543,0,,0.03125,source-image-level descriptive trend
+ketone,b_chromaticity_median,b chromaticity,8,0.97619048,3.314396e-05,0.1748675,0.85714286,0.22687057,source-image-level descriptive trend
+ketone,b_median,B median,8,0.9047619,0.0020082755,36.5,0.71428571,0.09009009,source-image-level descriptive trend
+ketone,g_bg_median,Background G,8,-0.5542571,0.15398835,-8.5,0.71428571,0.075471698,source-image-level descriptive trend
+ketone,g_chromaticity_median,g chromaticity,8,-1,0,-0.159883,1,0.26507821,source-image-level descriptive trend
+ketone,g_median,G median,8,-0.97619048,3.314396e-05,-82.5,0.85714286,0.28,source-image-level descriptive trend
+ketone,h_cos_weighted,cos(H),8,-0.52380952,0.18272075,-0.2894855,0.42857143,0.28460266,source-image-level descriptive trend
+ketone,h_sin_weighted,sin(H),8,-1,0,-1.229706,1,0.10285385,source-image-level descriptive trend
+ketone,hue_unwrapped_deg,Hue (unwrapped degree),8,-1,0,-78.399812,1,0.13581579,source-image-level descriptive trend
+ketone,intensity_median,Intensity median,8,-0.80952381,0.014902668,-30.666667,0.57142857,0.34693878,source-image-level descriptive trend
+ketone,r_bg_median,Background R,8,-0.35928788,0.38206468,-11,0.57142857,0.11666667,source-image-level descriptive trend
+ketone,r_chromaticity_median,r chromaticity,8,-0.80952381,0.014902668,-0.017692,0.57142857,0.060831225,source-image-level descriptive trend
+ketone,r_median,R median,8,-0.97619048,3.314396e-05,-46.5,0.85714286,0.40594059,source-image-level descriptive trend
+ketone,s_median,S median,8,0.33333333,0.41975309,0.117647,0.57142857,0.21739102,source-image-level descriptive trend
+ketone,v_median,V median,8,-0.97619048,3.314396e-05,-0.1823535,0.85714286,0.40594174,source-image-level descriptive trend

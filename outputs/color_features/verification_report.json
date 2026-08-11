@@ -1,0 +1,23 @@
+{
+  "feature_rows": 1824,
+  "feature_columns": 61,
+  "unique_patch_ids": 1824,
+  "source_images": 19,
+  "analyte_counts": {
+    "glucose": 1056,
+    "ketone": 768
+  },
+  "qc_counts": {
+    "pass": 1824
+  },
+  "highlight_fraction": {
+    "minimum": 0.0,
+    "maximum": 0.06107
+  },
+  "valid_fraction": {
+    "minimum": 0.93893,
+    "maximum": 1.0
+  },
+  "errors": [],
+  "warnings": []
+}

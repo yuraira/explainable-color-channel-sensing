@@ -1,0 +1,35 @@
+{
+  "ml_fold_rows": 60,
+  "ml_value_rows": 10944,
+  "ml_performance_rows": 20,
+  "ml_summary_rows": 12,
+  "cnn_patch_rows": 3648,
+  "cnn_fold_rows": 20,
+  "cnn_summary_rows": 4,
+  "maximum_shap_additivity_error": 2.7533531010703882e-12,
+  "maximum_cnn_prediction_difference": 3.552713678800501e-15,
+  "expected_top_features": [
+    {
+      "analyte": "glucose",
+      "feature_space": "RGB_primary",
+      "feature": "G"
+    },
+    {
+      "analyte": "glucose",
+      "feature_space": "HSV_primary",
+      "feature": "Hue"
+    },
+    {
+      "analyte": "ketone",
+      "feature_space": "RGB_primary",
+      "feature": "G"
+    },
+    {
+      "analyte": "ketone",
+      "feature_space": "HSV_primary",
+      "feature": "Hue"
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

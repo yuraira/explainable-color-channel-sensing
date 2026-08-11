@@ -1,0 +1,16 @@
+{
+  "source_features": "outputs/color_features/features.csv",
+  "random_seed": 240920,
+  "n_splits": 5,
+  "outer_splitter": "StratifiedGroupKFold",
+  "outer_stratification": "analyte + concentration_order + edge/interior",
+  "outer_group": "well_id",
+  "inner_splitter": "StratifiedGroupKFold with all five inner folds",
+  "inner_random_seed_rule": "random_seed + outer_fold",
+  "inner_stratification": "analyte + concentration_order + edge/interior",
+  "inner_group": "well_id",
+  "ml_usage": "all five inner folds for tuning; outer test for final fold evaluation",
+  "dl_usage": "inner_fold 1 as validation; inner_fold 2-5 as train; outer test for evaluation",
+  "interpretation": "internal patch-level validation grouped by spatial well_id",
+  "known_limitation": "Different well positions from the same source image remain across roles because only one source image exists per concentration."
+}

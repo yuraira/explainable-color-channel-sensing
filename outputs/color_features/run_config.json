@@ -1,0 +1,32 @@
+{
+  "input_manifest": "C:\\Users\\yurai\\Desktop\\IFMBE\\outputs\\patch_detection\\patch_manifest.csv",
+  "patch_root": "C:\\Users\\yurai\\Desktop\\IFMBE\\outputs\\patch_detection",
+  "output_directory": "C:\\Users\\yurai\\Desktop\\IFMBE\\outputs\\color_features",
+  "patch_count": 1824,
+  "feature_column_count_including_metadata_and_qc": 61,
+  "roi_radius_fraction": 0.7,
+  "background_annulus_radius_fractions": [
+    1.05,
+    1.16
+  ],
+  "specular_highlight_rule": {
+    "v_greater_than_or_equal": 0.96,
+    "s_less_than_or_equal": 0.3
+  },
+  "dark_pixel_reporting_threshold_v": 0.1,
+  "qc_review_rules": {
+    "highlight_fraction_greater_than": 0.15,
+    "valid_fraction_less_than": 0.8
+  },
+  "hue_method": "saturation-weighted circular statistics",
+  "color_scale": {
+    "rgb": "0-255",
+    "hue": "degrees 0-360",
+    "saturation_value": "0-1"
+  },
+  "notes": [
+    "No resizing, white balancing, or color correction is applied before feature extraction.",
+    "QC review flags are retained in the feature table and do not automatically exclude patches.",
+    "Background-normalized features are auxiliary and remain separate from raw RGB/HSV features."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "input_dir": "C:\\Users\\yurai\\Desktop\\IFMBE\\glucose_ketone_dataset",
+  "output_dir": "C:\\Users\\yurai\\Desktop\\IFMBE\\outputs\\patch_detection",
+  "source_files": [
+    "glucose_01_c0.jpg",
+    "glucose_02_c0.01.jpg",
+    "glucose_03_c0.05.jpg",
+    "glucose_04_c0.1.jpg",
+    "glucose_05_c0.5.jpg",
+    "glucose_06_c1.jpg",
+    "glucose_07_c2.5.jpg",
+    "glucose_08_c5.jpg",
+    "glucose_09_c10.jpg",
+    "glucose_10_c15.jpg",
+    "glucose_11_c20.jpg",
+    "ketone_01_c0.jpg",
+    "ketone_02_c0.01.jpg",
+    "ketone_03_c0.05.jpg",
+    "ketone_04_c0.1.jpg",
+    "ketone_05_c0.5.jpg",
+    "ketone_06_c1.jpg",
+    "ketone_07_c5.jpg",
+    "ketone_08_c10.jpg"
+  ],
+  "grid_rows": 8,
+  "grid_cols": 12,
+  "expected_patches_per_image": 96,
+  "max_detection_dimension": 1600,
+  "qc_max_dimension": 2000,
+  "well_id_order": "row-major A01-A12 through H01-H12"
+}

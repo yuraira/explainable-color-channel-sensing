@@ -1,0 +1,61 @@
+{
+  "random_seed": 240920,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "architectures": [
+    "tiny",
+    "lite"
+  ],
+  "representations": [
+    "rgb",
+    "g",
+    "hue_circular"
+  ],
+  "input_channels": {
+    "rgb": 3,
+    "g": 1,
+    "hue_circular": 2
+  },
+  "original_reference_image_size": 96,
+  "lightweight_experiment_image_size": 48,
+  "roi_radius_fraction": 0.7,
+  "target_transform_candidates": [
+    "raw"
+  ],
+  "maximum_epochs": 100,
+  "early_stopping_patience": 15,
+  "batch_size": 128,
+  "optimizer": "AdamW(lr=1e-3, weight_decay=1e-4)",
+  "loss": "SmoothL1Loss on train-standardized target",
+  "precision": "CUDA automatic mixed precision (float16); float32 on CPU",
+  "memory_format": "channels_last",
+  "augmentation": "random 90-degree rotations and horizontal/vertical flips only",
+  "hue_encoding": "S*sin(H), S*cos(H)",
+  "lite_architecture": "narrow depthwise-separable convolutions",
+  "evaluated_variants": [
+    [
+      "tiny",
+      "rgb"
+    ],
+    [
+      "tiny",
+      "g"
+    ],
+    [
+      "tiny",
+      "hue_circular"
+    ],
+    [
+      "lite",
+      "rgb"
+    ]
+  ],
+  "smoke_test": false
+}

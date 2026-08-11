@@ -1,0 +1,13 @@
+﻿analyte,feature,feature_label,n_source_images,median_edge_minus_interior_iqr_units,bootstrap_95ci_lower,bootstrap_95ci_upper,max_abs_well_median_iqr_units,row_spearman_rho_descriptive,column_spearman_rho_descriptive,interpretation_scope
+glucose,r_median,R median,11,0.65625,0.42105263,0.86792453,1.1836735,-0.85714286,-0.034965035,within-image centered position effect
+glucose,g_median,G median,11,0.58536585,0.44155844,0.75,1.3076923,-0.80952381,0.006993007,within-image centered position effect
+glucose,b_median,B median,11,0.68817204,0.47727273,0.86363636,1.35,-0.61904762,-0.048951049,within-image centered position effect
+glucose,s_median,S median,11,-0.28570908,-0.58334396,-0.12501594,1.2499602,0.92857143,0.1048951,within-image centered position effect
+glucose,v_median,V median,11,0.63767323,0.47727589,0.88463123,1.3077089,-0.64285714,-0.048951049,within-image centered position effect
+glucose,intensity_median,Intensity median,11,0.59793816,0.46428572,0.8732394,1.3661971,-0.73809524,0,within-image centered position effect
+ketone,r_median,R median,8,-0.33461538,-0.57142857,0.02739726,1.2885246,1,0.56643357,within-image centered position effect
+ketone,g_median,G median,8,0.022564935,-0.41269841,0.63636364,1.5876623,1,0.8041958,within-image centered position effect
+ketone,b_median,B median,8,0.22256098,-0.040816327,0.77777778,2.1351626,0.97619048,0.76223776,within-image centered position effect
+ketone,s_median,S median,8,-0.74305344,-1.157906,-0.40580074,2.1805645,-0.5952381,-0.31468531,within-image centered position effect
+ketone,v_median,V median,8,-0.3346154,-0.57143898,0.027400036,1.2885315,1,0.56643357,within-image centered position effect
+ketone,intensity_median,Intensity median,8,0.045992658,-0.22841862,0.56148143,1.843095,1,0.59440559,within-image centered position effect

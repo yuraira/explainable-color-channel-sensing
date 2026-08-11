@@ -1,0 +1,108 @@
+{
+  "random_seed": 240920,
+  "bootstrap_iterations": 5000,
+  "patch_rows": 1824,
+  "source_images": 19,
+  "qc_status_counts": {
+    "pass": 1824
+  },
+  "interpretation": {
+    "patches": "technical observations within source images",
+    "concentration_trends": "source-image-level descriptive associations",
+    "position_bias": "within-image centered residuals in IQR units",
+    "background": "negative control only; excluded from primary models"
+  },
+  "analytes": {
+    "glucose": {
+      "source_images": 11,
+      "strongest_sensor_trends": [
+        {
+          "feature": "g_chromaticity_median",
+          "spearman_rho_vs_concentration_order": 0.9
+        },
+        {
+          "feature": "g_median",
+          "spearman_rho_vs_concentration_order": 0.9
+        },
+        {
+          "feature": "h_sin_weighted",
+          "spearman_rho_vs_concentration_order": 0.9
+        },
+        {
+          "feature": "hue_unwrapped_deg",
+          "spearman_rho_vs_concentration_order": -0.9
+        },
+        {
+          "feature": "b_chromaticity_median",
+          "spearman_rho_vs_concentration_order": -0.8272727272727273
+        }
+      ],
+      "strongest_background_trend": [
+        {
+          "feature": "r_bg_median",
+          "spearman_rho_vs_concentration_order": 0.2870166899742693
+        }
+      ],
+      "largest_position_effect": [
+        {
+          "feature": "intensity_median",
+          "max_abs_well_median_iqr_units": 1.3661971497718735,
+          "median_edge_minus_interior_iqr_units": 0.5979381618662982
+        }
+      ]
+    },
+    "ketone": {
+      "source_images": 8,
+      "strongest_sensor_trends": [
+        {
+          "feature": "g_chromaticity_median",
+          "spearman_rho_vs_concentration_order": -1.0
+        },
+        {
+          "feature": "h_sin_weighted",
+          "spearman_rho_vs_concentration_order": -1.0
+        },
+        {
+          "feature": "hue_unwrapped_deg",
+          "spearman_rho_vs_concentration_order": -1.0
+        },
+        {
+          "feature": "b_chromaticity_median",
+          "spearman_rho_vs_concentration_order": 0.9761904761904763
+        },
+        {
+          "feature": "g_median",
+          "spearman_rho_vs_concentration_order": -0.9761904761904763
+        }
+      ],
+      "strongest_background_trend": [
+        {
+          "feature": "g_bg_median",
+          "spearman_rho_vs_concentration_order": -0.554257096618662
+        }
+      ],
+      "largest_position_effect": [
+        {
+          "feature": "s_median",
+          "max_abs_well_median_iqr_units": 2.1805645081128757,
+          "median_edge_minus_interior_iqr_units": -0.7430534403958744
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "tables": 11,
+    "figures": 6,
+    "primary_feature_sets": [
+      "RGB_primary",
+      "HSV_primary"
+    ],
+    "secondary_feature_sets": [
+      "RGB_HSV_combined",
+      "Chromaticity_secondary",
+      "Background_adjusted_secondary",
+      "Texture_QC_secondary"
+    ],
+    "negative_control": "Background_negative_control"
+  }
+}

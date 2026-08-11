@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "source_images": 19,
+  "patch_records": 1824,
+  "unique_patch_ids": 1824,
+  "crop_files_verified": 1824,
+  "qc_images": 19,
+  "analyte_patch_counts": {
+    "glucose": 1056,
+    "ketone": 768
+  },
+  "max_grid_residual_px": 20.75,
+  "mean_grid_residual_px": 4.305,
+  "min_circle_radius_px": 56.324,
+  "max_circle_radius_px": 91.896,
+  "errors": []
+}

@@ -1,0 +1,9 @@
+{
+  "random_seed": 240920,
+  "tree_count": 150,
+  "outer_folds": 5,
+  "inference_repeats": 50,
+  "serialization": "joblib compress=3",
+  "input_storage_assumption": "float32 numeric feature vector only",
+  "hue_note": "one conceptual Hue channel encoded as sine and cosine"
+}

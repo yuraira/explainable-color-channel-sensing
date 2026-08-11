@@ -1,0 +1,11 @@
+{
+  "random_seed": 240920,
+  "bootstrap_repeats": 20000,
+  "cluster_unit": "well_id",
+  "paired_models": [
+    "Nested-selected ML",
+    "CNN central ROI",
+    "CNN full patch"
+  ],
+  "uncertainty_scope": "conditional uncertainty across the 96 well positions; not uncertainty across independent images or plates"
+}

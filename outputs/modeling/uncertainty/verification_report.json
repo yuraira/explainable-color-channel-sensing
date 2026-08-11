@@ -1,0 +1,7 @@
+{
+  "paired_comparison_rows": 4,
+  "normalization_sensitivity_rows": 8,
+  "all_ci95_lower_above_zero": true,
+  "minimum_ci95_lower": 0.0156293712287561,
+  "errors": []
+}

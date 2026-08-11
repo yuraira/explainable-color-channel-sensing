@@ -1,0 +1,7 @@
+﻿analyte,feature,feature_label,n_concentrations,spearman_rho_vs_concentration_order,spearman_p_descriptive,endpoint_change_max_minus_zero,monotonic_adjacent_fraction,last_step_fraction_of_total_path,interpretation_scope
+glucose,b_bg_median,Background B,11,0.095891411,0.77912326,5.5,0.6,0.096385542,source-image-level descriptive trend
+glucose,g_bg_median,Background G,11,0.15525276,0.6485214,6,0.6,0.12962963,source-image-level descriptive trend
+glucose,r_bg_median,Background R,11,0.28701669,0.39213584,6.75,0.6,0.10582011,source-image-level descriptive trend
+ketone,b_bg_median,Background B,8,0.27712855,0.50637543,0,,0.03125,source-image-level descriptive trend
+ketone,g_bg_median,Background G,8,-0.5542571,0.15398835,-8.5,0.71428571,0.075471698,source-image-level descriptive trend
+ketone,r_bg_median,Background R,8,-0.35928788,0.38206468,-11,0.57142857,0.11666667,source-image-level descriptive trend

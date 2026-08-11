@@ -1,0 +1,85 @@
+{
+  "fold_metric_rows": 80,
+  "prediction_rows": 7296,
+  "concentration_prediction_rows": 380,
+  "training_history_rows": 2321,
+  "checkpoints": 40,
+  "maximum_checkpoint_prediction_difference": 3.552713678800501e-15,
+  "device": "cuda",
+  "patch_performance": [
+    {
+      "analyte": "glucose",
+      "architecture": "lite",
+      "representation": "rgb",
+      "mae_mean": 0.5616766972758633,
+      "mae_std": 0.0429210080045994,
+      "rmse_mean": 0.9764024995736044,
+      "r2_mean": 0.978455359162006
+    },
+    {
+      "analyte": "glucose",
+      "architecture": "tiny",
+      "representation": "g",
+      "mae_mean": 2.276013719019395,
+      "mae_std": 0.1945811832045423,
+      "rmse_mean": 3.5325989144449723,
+      "r2_mean": 0.7191752110326964
+    },
+    {
+      "analyte": "glucose",
+      "architecture": "tiny",
+      "representation": "hue_circular",
+      "mae_mean": 0.5776089873220419,
+      "mae_std": 0.0297003841848112,
+      "rmse_mean": 1.1270772833456917,
+      "r2_mean": 0.9713565326086904
+    },
+    {
+      "analyte": "glucose",
+      "architecture": "tiny",
+      "representation": "rgb",
+      "mae_mean": 0.523169142938064,
+      "mae_std": 0.037065178584997,
+      "rmse_mean": 0.9880464435366406,
+      "r2_mean": 0.9780733372635358
+    },
+    {
+      "analyte": "ketone",
+      "architecture": "lite",
+      "representation": "rgb",
+      "mae_mean": 0.1754933388173138,
+      "mae_std": 0.0140028846411968,
+      "rmse_mean": 0.3208530299922393,
+      "r2_mean": 0.9909597453324646
+    },
+    {
+      "analyte": "ketone",
+      "architecture": "tiny",
+      "representation": "g",
+      "mae_mean": 0.6009740881603897,
+      "mae_std": 0.0591776631125263,
+      "rmse_mean": 1.2461544592752962,
+      "r2_mean": 0.8633086703444313
+    },
+    {
+      "analyte": "ketone",
+      "architecture": "tiny",
+      "representation": "hue_circular",
+      "mae_mean": 0.1797341643698801,
+      "mae_std": 0.0198515350763442,
+      "rmse_mean": 0.3652089638790868,
+      "r2_mean": 0.9881427680871212
+    },
+    {
+      "analyte": "ketone",
+      "architecture": "tiny",
+      "representation": "rgb",
+      "mae_mean": 0.1835446580448521,
+      "mae_std": 0.0314020033147521,
+      "rmse_mean": 0.3459265116386307,
+      "r2_mean": 0.9892124203045446
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

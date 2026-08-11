@@ -1,0 +1,26 @@
+{
+  "fold_metric_rows": 380,
+  "prediction_rows": 34656,
+  "concentration_prediction_rows": 1805,
+  "best_parameter_rows": 180,
+  "best_primary_models": [
+    {
+      "analyte": "glucose",
+      "feature_set": "HSV_primary",
+      "model": "RandomForest",
+      "mae_mean": 0.3432931770427415,
+      "rmse_mean": 0.934311035283218,
+      "r2_mean": 0.9802667460525808
+    },
+    {
+      "analyte": "ketone",
+      "feature_set": "HSV_primary",
+      "model": "RandomForest",
+      "mae_mean": 0.0403828552631579,
+      "rmse_mean": 0.2835176946640497,
+      "r2_mean": 0.9912638023724336
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

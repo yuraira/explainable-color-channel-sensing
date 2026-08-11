@@ -1,0 +1,37 @@
+{
+  "random_seed": 240920,
+  "device": "cuda",
+  "torch_version": "2.13.0+cu130",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "input_modes": [
+    "roi_masked",
+    "full_patch"
+  ],
+  "target_transform_candidates": [
+    "raw",
+    "log1p"
+  ],
+  "image_size": 96,
+  "roi_radius_fraction": 0.7,
+  "augmentation": "random 90-degree rotations and horizontal/vertical flips only",
+  "color_augmentation": false,
+  "maximum_epochs": 120,
+  "early_stopping_patience": 18,
+  "batch_size": 64,
+  "optimizer": "AdamW(lr=1e-3, weight_decay=1e-4)",
+  "loss": "SmoothL1Loss on train-standardized target",
+  "reported_prediction": "clipped to 0 and analyte training maximum",
+  "evaluation_units": [
+    "patch",
+    "concentration_median"
+  ],
+  "smoke_test": false
+}

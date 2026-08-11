@@ -1,0 +1,10 @@
+{
+  "headline_ml_selection": "lowest inner MAE among primary feature/model candidates in each outer fold",
+  "headline_dl_models": [
+    "roi_masked",
+    "full_patch"
+  ],
+  "performance_unit": "patch-level outer-fold metrics",
+  "error_bars": "standard deviation across five outer folds",
+  "known_limitation": "different well positions from the same source image remain across train and test"
+}

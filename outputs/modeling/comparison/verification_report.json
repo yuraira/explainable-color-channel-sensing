@@ -1,0 +1,24 @@
+{
+  "selected_ml_rows": 10,
+  "comparison_metric_rows": 100,
+  "headline_prediction_rows": 5472,
+  "headline_concentration_rows": 285,
+  "best_headline_models": [
+    {
+      "analyte": "glucose",
+      "comparison_model": "Nested-selected ML",
+      "mae_mean": 0.3508149213470649,
+      "rmse_mean": 0.9121451549070888,
+      "r2_mean": 0.98111305993264
+    },
+    {
+      "analyte": "ketone",
+      "comparison_model": "Nested-selected ML",
+      "mae_mean": 0.0407690833333333,
+      "rmse_mean": 0.2844854360612443,
+      "r2_mean": 0.991256724733366
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

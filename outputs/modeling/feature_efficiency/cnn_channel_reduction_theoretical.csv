@@ -1,0 +1,3 @@
+input_channels,parameter_count,float32_parameter_bytes,input_tensor_bytes_per_patch,multiply_accumulate_operations_per_patch,parameter_reduction_percent_vs_rgb,input_tensor_reduction_percent_vs_rgb,mac_reduction_percent_vs_rgb
+3,169049,676196,110592,117448832,0.0,0.0,0.0
+1,168617,674468,36864,113467520,0.2555472082059085,66.66666666666667,3.3898268141142496

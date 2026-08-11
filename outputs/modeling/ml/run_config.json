@@ -1,0 +1,39 @@
+{
+  "random_seed": 240920,
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "inner_folds": 5,
+  "primary_feature_sets": [
+    "RGB_primary",
+    "HSV_primary",
+    "RGB_HSV_combined"
+  ],
+  "secondary_feature_sets": [
+    "Chromaticity_secondary",
+    "Background_adjusted_secondary",
+    "Background_negative_control"
+  ],
+  "models": [
+    "Ridge",
+    "ElasticNet",
+    "SVR",
+    "RandomForest",
+    "ExtraTrees"
+  ],
+  "inner_selection_metric": "MAE on original concentration scale",
+  "target_transform_candidates": [
+    "raw",
+    "log1p"
+  ],
+  "reported_prediction": "clipped to 0 and analyte training maximum",
+  "evaluation_units": [
+    "patch",
+    "concentration_median"
+  ],
+  "smoke_test": false
+}

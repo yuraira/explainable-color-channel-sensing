@@ -1,0 +1,6 @@
+{
+  "selection_rule": "lowest inner_best_mae among primary feature/model candidates",
+  "random_seed": 240920,
+  "prediction_reproduction_tolerance": 1e-10,
+  "inference_repeats": 30
+}

@@ -1,0 +1,11 @@
+analyte,outer_fold,feature_set,model,target_transform,inner_best_mae,best_parameters
+glucose,1,RGB_HSV_combined,ExtraTrees,raw,0.3567349646464646,"{""max_depth"": null, ""min_samples_leaf"": 1, ""target_transform"": ""raw""}"
+glucose,2,HSV_primary,ExtraTrees,raw,0.3614267323232323,"{""max_depth"": null, ""min_samples_leaf"": 1, ""target_transform"": ""raw""}"
+glucose,3,HSV_primary,ExtraTrees,log1p,0.3476220478807515,"{""max_depth"": null, ""min_samples_leaf"": 1, ""target_transform"": ""log1p""}"
+glucose,4,RGB_HSV_combined,ExtraTrees,raw,0.3731186010101009,"{""max_depth"": null, ""min_samples_leaf"": 1, ""target_transform"": ""raw""}"
+glucose,5,HSV_primary,ExtraTrees,raw,0.3793693232323232,"{""max_depth"": null, ""min_samples_leaf"": 1, ""target_transform"": ""raw""}"
+ketone,1,HSV_primary,RandomForest,raw,0.0405797777777777,"{""max_depth"": null, ""min_samples_leaf"": 1, ""target_transform"": ""raw""}"
+ketone,2,RGB_HSV_combined,RandomForest,raw,0.0414989305555555,"{""max_depth"": null, ""min_samples_leaf"": 1, ""target_transform"": ""raw""}"
+ketone,3,HSV_primary,RandomForest,raw,0.0374456180555555,"{""max_depth"": null, ""min_samples_leaf"": 1, ""target_transform"": ""raw""}"
+ketone,4,HSV_primary,RandomForest,raw,0.0282937708333333,"{""max_depth"": null, ""min_samples_leaf"": 1, ""target_transform"": ""raw""}"
+ketone,5,HSV_primary,RandomForest,raw,0.0245183819444444,"{""max_depth"": null, ""min_samples_leaf"": 1, ""target_transform"": ""raw""}"

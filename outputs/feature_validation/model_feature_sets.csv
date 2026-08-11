@@ -1,0 +1,28 @@
+﻿feature_set,analysis_role,feature,rationale
+RGB_primary,primary,r_median,robust central tendency with direct channel interpretation
+RGB_primary,primary,g_median,robust central tendency with direct channel interpretation
+RGB_primary,primary,b_median,robust central tendency with direct channel interpretation
+HSV_primary,primary,h_sin_weighted,circular Hue representation plus saturation and brightness
+HSV_primary,primary,h_cos_weighted,circular Hue representation plus saturation and brightness
+HSV_primary,primary,s_median,circular Hue representation plus saturation and brightness
+HSV_primary,primary,v_median,circular Hue representation plus saturation and brightness
+RGB_HSV_combined,secondary,r_median,correlated color spaces; secondary comparison only
+RGB_HSV_combined,secondary,g_median,correlated color spaces; secondary comparison only
+RGB_HSV_combined,secondary,b_median,correlated color spaces; secondary comparison only
+RGB_HSV_combined,secondary,h_sin_weighted,correlated color spaces; secondary comparison only
+RGB_HSV_combined,secondary,h_cos_weighted,correlated color spaces; secondary comparison only
+RGB_HSV_combined,secondary,s_median,correlated color spaces; secondary comparison only
+RGB_HSV_combined,secondary,v_median,correlated color spaces; secondary comparison only
+Chromaticity_secondary,secondary,r_chromaticity_median,two chromaticity components; B omitted to reduce compositional redundancy
+Chromaticity_secondary,secondary,g_chromaticity_median,two chromaticity components; B omitted to reduce compositional redundancy
+Background_adjusted_secondary,secondary,r_delta_bg,sensitivity analysis for local illumination adjustment
+Background_adjusted_secondary,secondary,g_delta_bg,sensitivity analysis for local illumination adjustment
+Background_adjusted_secondary,secondary,b_delta_bg,sensitivity analysis for local illumination adjustment
+Background_negative_control,negative_control,r_bg_median,tests whether the substrate alone carries concentration-associated image information
+Background_negative_control,negative_control,g_bg_median,tests whether the substrate alone carries concentration-associated image information
+Background_negative_control,negative_control,b_bg_median,tests whether the substrate alone carries concentration-associated image information
+Texture_QC_secondary,secondary,r_iqr,patch heterogeneity; excluded from parsimonious primary models
+Texture_QC_secondary,secondary,g_iqr,patch heterogeneity; excluded from parsimonious primary models
+Texture_QC_secondary,secondary,b_iqr,patch heterogeneity; excluded from parsimonious primary models
+Texture_QC_secondary,secondary,s_iqr,patch heterogeneity; excluded from parsimonious primary models
+Texture_QC_secondary,secondary,v_iqr,patch heterogeneity; excluded from parsimonious primary models

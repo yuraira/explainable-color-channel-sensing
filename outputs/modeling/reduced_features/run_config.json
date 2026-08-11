@@ -1,0 +1,14 @@
+{
+  "random_seed": 240920,
+  "outer_folds": 5,
+  "inner_folds": 5,
+  "G_only": [
+    "g_median"
+  ],
+  "Hue_only": [
+    "h_sin_weighted",
+    "h_cos_weighted"
+  ],
+  "hue_note": "two circular components treated as one conceptual Hue feature",
+  "selection_rule": "lowest inner-fold MAE within each feature family and outer fold"
+}

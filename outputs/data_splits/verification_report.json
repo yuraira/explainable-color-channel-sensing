@@ -1,0 +1,82 @@
+{
+  "source_patches": 1824,
+  "unique_wells": 96,
+  "outer_folds": 5,
+  "fold_details": [
+    {
+      "outer_fold": 1,
+      "train_wells": 60,
+      "validation_wells": 16,
+      "test_wells": 20,
+      "inner_fold_wells": {
+        "1": 16,
+        "2": 15,
+        "3": 15,
+        "4": 15,
+        "5": 15
+      }
+    },
+    {
+      "outer_fold": 2,
+      "train_wells": 61,
+      "validation_wells": 16,
+      "test_wells": 19,
+      "inner_fold_wells": {
+        "1": 16,
+        "2": 16,
+        "3": 15,
+        "4": 15,
+        "5": 15
+      }
+    },
+    {
+      "outer_fold": 3,
+      "train_wells": 61,
+      "validation_wells": 16,
+      "test_wells": 19,
+      "inner_fold_wells": {
+        "1": 16,
+        "2": 16,
+        "3": 15,
+        "4": 15,
+        "5": 15
+      }
+    },
+    {
+      "outer_fold": 4,
+      "train_wells": 61,
+      "validation_wells": 16,
+      "test_wells": 19,
+      "inner_fold_wells": {
+        "1": 16,
+        "2": 16,
+        "3": 15,
+        "4": 15,
+        "5": 15
+      }
+    },
+    {
+      "outer_fold": 5,
+      "train_wells": 61,
+      "validation_wells": 16,
+      "test_wells": 19,
+      "inner_fold_wells": {
+        "1": 16,
+        "2": 16,
+        "3": 15,
+        "4": 15,
+        "5": 15
+      }
+    }
+  ],
+  "outer_test_pairwise_well_overlap": 0,
+  "outer_test_edge_wells": {
+    "1": 8,
+    "2": 7,
+    "3": 7,
+    "4": 7,
+    "5": 7
+  },
+  "errors": [],
+  "warnings": []
+}

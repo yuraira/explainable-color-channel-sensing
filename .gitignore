@@ -6,7 +6,8 @@ venv/
 .pytest_cache/
 
 # Generated analysis artifacts are excluded by default.
-# README-referenced presentation figures are force-added explicitly.
+# Publication figures, result tables, run configurations, and verification
+# reports are force-added explicitly for research transfer and auditability.
 outputs/
 
 # Large or regenerable model artifacts

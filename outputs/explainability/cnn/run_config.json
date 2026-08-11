@@ -1,0 +1,11 @@
+{
+  "random_seed": 240920,
+  "device": "cuda",
+  "outer_folds": 5,
+  "target_layer": "last convolution before ReLU",
+  "map": "absolute value of signed regression Grad-CAM",
+  "occlusion_fill": "neutral gray corresponding to normalized zero",
+  "roi_radius_fraction": 0.7,
+  "maximum_prediction_reproduction_difference": 3.552713678800501e-15,
+  "interpretation": "spatial sensitivity and occlusion diagnostics, not causal proof"
+}

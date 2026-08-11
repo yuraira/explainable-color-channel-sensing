@@ -1,0 +1,43 @@
+{
+  "fold_metric_rows": 40,
+  "prediction_rows": 3648,
+  "concentration_prediction_rows": 190,
+  "training_history_rows": 2973,
+  "checkpoints": 20,
+  "patch_performance": [
+    {
+      "analyte": "glucose",
+      "input_mode": "full_patch",
+      "mae_mean": 0.4076761901327364,
+      "rmse_mean": 0.7736203846456808,
+      "r2_mean": 0.9864673423269406,
+      "normalized_mae_mean": 0.0203838095066368
+    },
+    {
+      "analyte": "glucose",
+      "input_mode": "roi_masked",
+      "mae_mean": 0.4676425467659676,
+      "rmse_mean": 0.9116375542837856,
+      "r2_mean": 0.9812067119093844,
+      "normalized_mae_mean": 0.0233821273382983
+    },
+    {
+      "analyte": "ketone",
+      "input_mode": "full_patch",
+      "mae_mean": 0.1470786262381656,
+      "rmse_mean": 0.3177188090545144,
+      "r2_mean": 0.9908971250298376,
+      "normalized_mae_mean": 0.0147078626238165
+    },
+    {
+      "analyte": "ketone",
+      "input_mode": "roi_masked",
+      "mae_mean": 0.1443811871751455,
+      "rmse_mean": 0.3291844143835409,
+      "r2_mean": 0.990055743882029,
+      "normalized_mae_mean": 0.0144381187175145
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}
